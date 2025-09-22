@@ -1,0 +1,1 @@
+{ "instruction": "Given the user query and provided context snippets, produce a short, factual answer (1-2 sentences). Only cite URIs from the allowed_uris list and include them in the citations field. Briefly summarize validator results if present. Keep the answer concise and avoid adding unsupported claims." } 

@@ -1,0 +1,1 @@
+{ "instruction": "Extract the total amount as a numeric value from the text if present. Return a single numeric value (FLOAT)." } 

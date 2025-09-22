@@ -1,0 +1,73 @@
+# ANCHOR central configuration (YAML)
+# Override any value here; all keys under `env` are exported to environment at startup.
+# You can also set ANCHOR_CONFIG_YAML to point to another file.
+
+env:
+  # Core identifiers
+  PROJECT_ID: "your-project"
+  REGION: "US"
+  DATASET_ID: "anchor_demo"
+  STAGING_DATASET_ID: "anchor_staging"
+  QUICKSTART: "false"
+  FULL_RUN: "true"
+  BQ_CONNECTION_NAME: ""
+
+  # Embeddings & indexing
+  TEXT_EMBED_MODEL: "${PROJECT_ID}.${DATASET_ID}.text_embedding_model"
+  IMAGE_EMBED_MODEL: "${PROJECT_ID}.${DATASET_ID}.image_embedding_model"
+  TEXT_VECTOR_DIM: "768"
+  IMAGE_VECTOR_DIM: "1024"
+  VECTOR_K: "40"
+  VECTOR_SEARCH_TIMEOUT_MS: "2000"
+  INDEX_GROWTH_THRESH_PCT: "15"
+
+  # Chunking & limits
+  MAX_CHUNK_TOKENS: "800"
+  MAX_IMAGE_SIDE_PX: "1024"
+  MAX_OBJECTS_PER_RUN: "200000"
+  TOPK_CONTEXT: "12"
+
+  # Validators
+  VALIDATOR_CONF_THRESH: "0.65"
+  CONTRADICTION_MARGIN: "0.20"
+  MAX_VALIDATORS_PER_ITEM: "5"
+
+  # Forecasting
+  FORECAST_FUNC: "AI.FORECAST"
+  FORECAST_HORIZON_DAYS: "30"
+  FORECAST_BACKTEST_SPLITS: "3"
+
+  # Budgets & SLAs
+  LATENCY_P95_MS: "3000"
+  VECTOR_LATENCY_P95_MS: "500"
+  MAX_GB_SCANNED_PER_DEMO: "5"
+  MAX_BQ_DML_PER_DAY: "3"
+
+  # Evaluation & caching
+  HOLDOUT_SIZE: "200"
+  RECALL_TARGET: "0.95"
+  PRECISION_AT_K_TARGET: "0.85"
+  MRR_TARGET: "0.80"
+  HOT_QUERY_TOPN: "25"
+  NEIGHBOR_PRECOMP_K: "64"
+  CACHE_TTL_MIN: "60"
+  PROMPT_AB_SPLIT_FRAC: "0.5"
+  MAX_MV_REFRESHES_PER_DAY: "4"
+  MAX_VALIDATION_SAMPLE_FRAC: "0.25"
+  HYBRID_ALPHA: "0.6"
+  HYBRID_BETA: "0.2"
+  HYBRID_GAMMA: "0.1"
+  HYBRID_DELTA: "0.1"
+
+  # Orchestration
+  SEED: "42"
+
+  # Object Tables & Prompts
+  OBJECT_TABLES_ENABLED: "true"
+  GCS_IMAGES_URI_PREFIX: "gs://cloud-samples-data/bigquery/tutorials/cymbal-pets/images/"
+  GCS_PDFS_URI_PREFIX: "gs://cloud-samples-data/bigquery/tutorials/cymbal-pets/documents/"
+  GCS_SCREENS_URI_PREFIX: ""
+  PROMPTS_DIR: "prompts"
+  ANSWER_PROMPT_ID: "answer_v1"
+  FACTS_PROMPT_ID: "facts_v1"
+  VALIDATOR_PROMPT_ID: "validator_v1" 

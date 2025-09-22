@@ -1,0 +1,1 @@
+{ "instruction": "Extract facts from the snippet: entity (subject), predicate, value_text (STRING), value_number (FLOAT64 if present), value_date (YYYY-MM-DD if present), and confidence in [0,1]. Prefer concise entities and canonical predicates. Leave numeric or date fields null if not present." } 

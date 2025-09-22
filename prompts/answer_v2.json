@@ -1,0 +1,1 @@
+{ "instruction": "Produce a brief, evidence-linked answer to the query using the supplied context snippets only. Return 1–3 sentences and list citations strictly from allowed_uris. Prefer contexts with higher relevance and recency; be definitive only when evidence is strong." } 
