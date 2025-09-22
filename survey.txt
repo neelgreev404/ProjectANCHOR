@@ -1,0 +1,17 @@
+Team Survey: BigQuery AI - Building the Future of Data
+
+Team Member Experience:
+
+1)  BigQuery AI:
+       Team Member 1: 2 Days
+
+2)  Google Cloud:
+       Team Member 1: 0 Days
+
+3)  Feedback:
+
+- I started with no prior experience in BigQuery AI or Google Cloud. Reading the docs was enough to get productive quickly.
+- Integration into a warehouse‑native workflow was straightforward; I had a working the bigquery integration in ~2 days, and spent the following ~2 weeks building and iterating on the actual code for the project: data modeling, prompts, evaluation, and presentation.
+- The documentation made debugging simple, and the Gemini Assist in the Google Cloud Console helped me resolve IAM/permission issues (e.g., connectionUser on the BigQuery connection) without guesswork.
+- SQL‑first design, `AI.GENERATE_*`, `ML.GENERATE_EMBEDDING`, and `VECTOR_SEARCH` felt cohesive; Object Tables + ObjectRef made multimodal inputs easy to reference.
+- Suggestion: add built‑in one‑click fixes in Console for common IAM gaps to reduce first‑run friction even further. 
